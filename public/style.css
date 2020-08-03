@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+
+.top {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left img {
+    width: 25px;
+    height: 22px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 540px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(231, 231, 240);
+}
+
+.search-bar input {
+    font-size: 14px;
+    width: 450px;
+    border: none;
+    background-color: rgb(231, 231, 240);
+}
+
+.loupe, .field {
+    display: flex;
+}
+
+.loupe {
+    width: 45px;
+    justify-content: center;
+}
+
+.field {
+    width: 495px;
+    justify-content: flex-start;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar svg {
+    width: 20px;
+    
+}
+
+.right {
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right svg {
+    height: 25px;
+}
+
+.navs {
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.lb {
+    color: rgb(29,161,242);
+    background-color: white;
+    border: 1px solid rgb(29,161,242);
+}
+
+.rb {
+    color: white;
+    background-color: rgb(29,161,242);
+    border: 1px solid rgb(29,161,242);
+}
+
+/* main content */
+
+main {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* left container */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    background-color: rgb(231, 231, 240);
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heading {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-right: 1px solid rgb(231, 231, 240);
+    border-left: 1px solid rgb(231, 231, 240);
+}
+
+.heading h2 {
+    margin-left: 15px;
+}
+
+.heading div {
+    margin-right: 15px;
+}
+
+.heading svg {
+    width: 20px;
+}
+
+.main-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url("./resources/covid-19-main.jpeg");
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+.caption {
+    margin: 0 10px;
+    row-gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40%;
+    color: white;
+}
+
+.caption h4 {
+    margin: 3px;
+}
+
+.caption h1 {
+    margin: 3px;
+    font-size: 1.7rem;
+}
+
+
+/* trends */
+
+h2 {
+    font-size: 1.3rem;
+}
+
+
+.trends, .news {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 10px;
+    border-right: 1px solid rgb(231, 231, 240);
+    border-left: 1px solid rgb(231, 231, 240);
+}
+
+.head, .more {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 40px;
+    border-bottom: 1px solid rgb(231, 231, 240);
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgb(231, 231, 240);
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.topics h4, .topics p {
+    margin: 2px;
+}
+
+.topics h4, .sign-up p, footer li, footer p {
+    color: rgb(109, 109, 109);
+    font-size: 0.8rem;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+.topics p {
+    font-weight: bold;
+}
+
+h3 {
+    color: rgb(29,161,242);
+    font-weight: normal;
+}
+
+svg {
+    width: 15px;
+}
+
+/* news */
+
+.image {
+    width: 90px;
+    height: 90px;
+    background-image: url('background-news.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160px;
+    border-radius: 15px;
+}
+
+/* right container */
+
+.aside {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    padding: 5px;
+    border-radius: 16px;
+    border: 1px solid rgb(231, 231, 240);
+}
+
+.sign-up h2, .sign-up p, .sign-up button {
+    margin: 8px;
+}
+
+.sign-up button {
+    align-self: center;
+    color: white;
+    background-color: rgb(29,161,242);
+    border: 1px solid rgb(29,161,242);
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+ 
+
+/* footer */
+
+footer {
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    padding-left: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+}
+
+footer li,footer p {
+    margin: 1px 4px;
+}
+
+footer p {
+    padding-left: 30px;
+    align-self: flex-start;
+}
+
+
