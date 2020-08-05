@@ -3,6 +3,11 @@
     word-break: break-all;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -23,7 +28,12 @@ body {
 
 .left {
     width: 50%;
+    height: 950px;
+    background-image: url("./resources/Twitter_bird_logo_2012.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: rgb(113, 201, 248);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +43,13 @@ body {
 }
 
 .left img {
-    height: 950px;
+    max-height: 950px;
+    height: auto;
+    width: auto;
+    z-index: 1;
 }
 
 .actions {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -78,6 +90,7 @@ body {
     justify-content: center;
     align-items: stretch;
     z-index: 3;
+    background-color: white;
 }
 
 header {
