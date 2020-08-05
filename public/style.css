@@ -1,7 +1,11 @@
+:root {
+    font-size: 14px;
+    word-break: break-all;
+}
+
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-family: 'Roboto';
 }
 
 body {
@@ -9,327 +13,217 @@ body {
     padding: 0;
 }
 
-header {
+.container {
     width: 100%;
-    border-bottom: 1px solid rgb(209, 207, 207);
+    display: flex;
+    flex-direction: row;
 }
 
-.top {
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-}
+/* left side */
 
 .left {
+    width: 50%;
+    background-color: rgb(113, 201, 248);
     display: flex;
-    width: 65%;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
 }
 
 .left img {
-    width: 25px;
-    height: 22px;
+    height: 950px;
 }
 
-.search-bar {
+.actions {
+    position: absolute;
     display: flex;
-    align-items: center;
-    width: 540px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: rgb(231, 231, 240);
-}
-
-.search-bar input {
-    font-size: 14px;
-    width: 450px;
-    border: none;
-    background-color: rgb(231, 231, 240);
-}
-
-.loupe, .field {
-    display: flex;
-}
-
-.loupe {
-    width: 45px;
-    justify-content: center;
-}
-
-.field {
-    width: 495px;
+    flex-direction: column;
     justify-content: flex-start;
-}
-
-.search-bar input:focus {
-    outline: none;
-}
-
-.search-bar svg {
-    width: 20px;
-    
-}
-
-.right {
-    display: flex;
-    width: 22%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.right svg {
-    height: 25px;
-}
-
-.navs {
-    font-size: 14px;
-    padding: 6px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-
-.lb {
-    color: rgb(29,161,242);
-    background-color: white;
-    border: 1px solid rgb(29,161,242);
-}
-
-.rb {
     color: white;
-    background-color: rgb(29,161,242);
-    border: 1px solid rgb(29,161,242);
-}
-
-/* main content */
-
-main {
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-/* left container */
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 65%;
-    background-color: rgb(231, 231, 240);
-}
-
-.explore {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.heading {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    border-right: 1px solid rgb(231, 231, 240);
-    border-left: 1px solid rgb(231, 231, 240);
-}
-
-.heading h2 {
-    margin-left: 15px;
-}
-
-.heading div {
-    margin-right: 15px;
-}
-
-.heading svg {
-    width: 20px;
-}
-
-.main-news {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background: url("./resources/covid-19-main.jpeg");
-    background-position: center;
-    width: 100%;
-    height: 350px;
-    background-repeat: no-repeat;
-}
-
-.caption {
-    margin: 0 10px;
-    row-gap: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 40%;
-    color: white;
-}
-
-.caption h4 {
-    margin: 3px;
-}
-
-.caption h1 {
-    margin: 3px;
-    font-size: 1.7rem;
-}
-
-
-/* trends */
-
-h2 {
-    font-size: 1.3rem;
-}
-
-
-.trends, .news {
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    margin-top: 10px;
-    border-right: 1px solid rgb(231, 231, 240);
-    border-left: 1px solid rgb(231, 231, 240);
-}
-
-.head, .more {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    height: 40px;
-    border-bottom: 1px solid rgb(231, 231, 240);
+    z-index: 2;
+    flex-shrink: 2;
+    max-width: 380px;
+    min-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid rgb(231, 231, 240);
+    align-items: center;
+    font-size: 1.25rem;
+    flex-basis: auto;
+    max-width: 380px;
+    min-width: 0px;
 }
 
-.topics {
+.item h3 {
+    word-break: break-word;
+}
+
+
+.icon {
+    padding-right: 15px;
+}
+
+/* right side */
+
+.right {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    z-index: 3;
 }
 
-.topics h4, .topics p {
-    margin: 2px;
+header {
+    width: 50%;
+    position: absolute;
+    top: 15px;
 }
 
-.topics h4, .sign-up p, footer li, footer p {
-    color: rgb(109, 109, 109);
-    font-size: 0.8rem;
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-h4 {
-    font-weight: lighter;
+.credentials {
+    display: flex;
+    flex-direction: row;
 }
 
-.topics p {
+.r {
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+}
+
+.field {
+    max-height: 59px;
+    flex-basis: initial;
+    background-color: rgba(233, 240, 241, 0.6);
+    color: rgb(101, 119, 134);
+    border-bottom: 2px solid rgb(118, 118, 118);
+    margin-right: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.field span {
+    padding: 5px 8px 8px;
+}
+
+.field input {
+    font-size: 1.27rem;
+    padding: 0 8px;
+    margin: 4px 0 4px 0;
+    border: none;
+    background-color: transparent;
+}
+
+.field input:focus {
+    outline: none;
+}
+
+.password-reset {
+    margin: 7px 0 0 10px;
+    color: rgb(29, 161, 242);
+    font-size: 0.9rem;
+}
+
+#submit {
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 15px;
     font-weight: bold;
-}
-
-h3 {
-    color: rgb(29,161,242);
-    font-weight: normal;
-}
-
-svg {
-    width: 15px;
-}
-
-/* news */
-
-.image {
-    width: 90px;
-    height: 90px;
-    background-image: url('background-news.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 160px;
-    border-radius: 15px;
-}
-
-/* right container */
-
-.aside {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 10px;
-}
-
-.sign-up {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 95%;
-    padding: 5px;
-    border-radius: 16px;
-    border: 1px solid rgb(231, 231, 240);
-}
-
-.sign-up h2, .sign-up p, .sign-up button {
-    margin: 8px;
-}
-
-.sign-up button {
-    align-self: center;
-    color: white;
-    background-color: rgb(29,161,242);
-    border: 1px solid rgb(29,161,242);
-    font-size: 14px;
-    padding: 10px 20px;
-    width: 100%;
+    font-size: 1rem;
     border-radius: 20px;
-    font-weight: bold;
 }
 
- 
+.white-button {
+    color: rgb(29, 161, 242);
+    border: 1px solid rgb(29, 161, 242);
+    background-color: white;
+}
+
+/* central section */
+
+main {
+    align-self: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-basis: auto;
+    max-width: 360px;
+}
+
+.main-content img {
+    width: 35px;
+    height: 32px;
+}
+
+.main-content h1 {
+    font-size: 2.2rem;
+}
+
+.main-content span {
+    font-weight: bold;
+    margin: 50px 0 20px 0;
+}
+
+.main-content button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.blue-button {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(29, 161, 242);
+}
+
 
 /* footer */
 
 footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    background-color: white;
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
-footer ul {
-    padding-left: 20px;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: start;
+nav {
+    padding: 10px 15px;
 }
 
-footer li,footer p {
-    margin: 1px 4px;
-}
-
-footer p {
-    padding-left: 30px;
-    align-self: flex-start;
+nav a, nav span {
+    text-decoration: none;
+    color: rgb(101, 119, 134);
+    padding: 0 5px;
 }
 
 
+@media only screen and (max-width: 1180px) {
+    header {
+        display: none;
+    }
+}
