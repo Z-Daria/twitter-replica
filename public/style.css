@@ -24,6 +24,11 @@ body {
     flex-direction: row;
 }
 
+
+.bold {
+    font-weight: bold;
+}
+
 /* left side */
 
 .left {
@@ -159,7 +164,6 @@ header {
 
 .button {
     padding: 10px 15px;
-    font-weight: bold;
     font-size: 1rem;
     border-radius: 20px;
 }
