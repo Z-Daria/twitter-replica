@@ -44,6 +44,18 @@ body {
     color: rgb(101, 119, 134);
 }
 
+.blue-button {
+    background-color: rgb(29, 161, 242);
+    border: 1px solid rgb(29, 161, 242);
+    color: white;
+    border-radius: 25px;
+}
+
+.small-type {
+    font-size: 1rem;
+    color: rgb(101, 119, 134);
+}
+
 /* navigation panel */
 
 .lcol {
@@ -79,12 +91,8 @@ nav div span {
 
 nav button {
     width: 80%;
-    padding: 15px 0;
     margin-top: 10px;
-    border-radius: 25px;
-    background-color: rgb(29, 161, 242);
-    border: 1px solid rgb(29, 161, 242);
-    color: white;
+    padding: 15px 0;
 }
 
 .account {
@@ -128,7 +136,6 @@ main {
 
 header {
     width: 100%;
-    background-color: mediumblue;
     display: flex;
     flex-direction: row;
 }
@@ -138,7 +145,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: mediumpurple;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgb(231, 231, 240);
+}
+
+.head, .main {
+    border-right: 1px solid rgb(231, 231, 240);
+    border-left: 1px solid rgb(231, 231, 240);
 }
 
 /* central area */
@@ -150,7 +164,81 @@ header {
 
 .main {
     width: 60%;
-    background-color: lightpink;
+    /* background-color: lightpink; */
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 10%;
+    width: 400px;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.options svg {
+    /* background-color: lightgrey; */
+    margin: 5px;
+}
+
+.make-tweet {
+    padding: 10px;
+    width: 100%;
+    /* background-color: oldlace; */
+}
+
+.field-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.field-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* background-color: orange; */
+}
+
+.field-bottom button {
+    padding: 10px 15px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.borderline {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(231, 231, 240);
+}
+
+/* welcome area */
+
+.welcome {
+    padding: 39px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.welcome p {
+    text-align: center;
+}
+
+.welcome button {
+    padding: 10px 15px;
 }
 
 /* right column */
