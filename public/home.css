@@ -56,6 +56,10 @@ body {
     color: rgb(101, 119, 134);
 }
 
+button:focus {
+    outline: none;
+}
+
 /* navigation panel */
 
 .lcol {
@@ -223,6 +227,52 @@ textarea:focus {
     background-color: rgb(231, 231, 240);
 }
 
+/* search-bar */
+
+.search {
+    width: 40%;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: gold;
+    border-radius: 25px;
+    width: 100%;
+    background-color: rgb(230, 236, 240);
+}
+
+.search-bar input {
+    width: 80%;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.cancel {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(29, 161, 242);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* should be removed when event is fired */
+}
+
+.search-bar input, .loupe, .cancel {
+    margin: 0 5px;
+}
+
 /* welcome area */
 
 .welcome {
@@ -245,6 +295,80 @@ textarea:focus {
 
 .rcol {
     width: 40%;
-    background-color: magenta;
+    padding-left: 30px;
 }
 
+.topics, .people {
+    background-color: rgb(245, 248, 250);
+    border-radius: 20px;
+}
+
+.topics {
+    margin-bottom: 15px;
+}
+
+.title, .item, .rec {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(231, 231, 240);
+}
+
+.title {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    justify-content: space-between;
+}
+
+.item svg {
+    align-self: flex-start;
+}
+
+.captions {
+    display: flex;
+    flex-direction: column;
+}
+
+.captions span {
+    margin: 3px 0;
+}
+
+.more {
+    padding: 20px 10px;
+    font-size: 1.1rem;
+}
+
+.rec {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rec button {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid rgb(29, 161, 242);
+    border-radius: 25px;
+}
+
+/* footer section */
+
+footer {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a, footer span, footer div {
+    margin: 3px 3px 3px 0;
+}
