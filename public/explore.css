@@ -22,14 +22,14 @@ header {
     justify-content: space-between;
 }
 
-.left {
+.header-center {
     display: flex;
     width: 65%;
     justify-content: space-between;
     align-items: center;
 }
 
-.left img {
+.header-center img {
     width: 25px;
     height: 22px;
 }
@@ -73,18 +73,18 @@ header {
     
 }
 
-.right {
+.header-side {
     display: flex;
     width: 22%;
     justify-content: space-between;
     align-items: center;
 }
 
-.right svg {
+.header-side svg {
     height: 25px;
 }
 
-.navs {
+.sign-button {
     font-size: 14px;
     padding: 6px 20px;
     border-radius: 20px;
@@ -92,13 +92,13 @@ header {
 }
 
 
-.lb {
+.log-in-but {
     color: rgb(29,161,242);
     background-color: white;
     border: 1px solid rgb(29,161,242);
 }
 
-.rb {
+.sign-up-but {
     color: white;
     background-color: rgb(29,161,242);
     border: 1px solid rgb(29,161,242);
@@ -129,7 +129,7 @@ main {
     width: 100%;
 }
 
-.heading {
+.explore-head {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -140,15 +140,15 @@ main {
     border-left: 1px solid rgb(231, 231, 240);
 }
 
-.heading h2 {
+.explore-head h2 {
     margin-left: 15px;
 }
 
-.heading div {
+.explore-head div {
     margin-right: 15px;
 }
 
-.heading svg {
+.explore-head svg {
     width: 20px;
 }
 
@@ -163,7 +163,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.caption {
+.news-caption {
     margin: 0 10px;
     row-gap: 0;
     display: flex;
@@ -173,11 +173,11 @@ main {
     color: white;
 }
 
-.caption h4 {
+.news-caption h4 {
     margin: 3px;
 }
 
-.caption h1 {
+.news-caption h1 {
     margin: 3px;
     font-size: 1.7rem;
 }
@@ -201,7 +201,7 @@ h2 {
     border-left: 1px solid rgb(231, 231, 240);
 }
 
-.head, .more {
+.section-head, .more {
     display: flex;
     align-items: center;
     width: 100%;
@@ -211,7 +211,7 @@ h2 {
     border-bottom: 1px solid rgb(231, 231, 240);
 }
 
-.item {
+.tweet-link {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

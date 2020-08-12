@@ -54,7 +54,7 @@ body {
     z-index: 1;
 }
 
-.actions {
+.opportunities {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -67,17 +67,17 @@ body {
     margin-right: auto;
 }
 
-.item {
+.phrase {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     flex-basis: auto;
     max-width: 380px;
     min-width: 0px;
 }
 
-.item h3 {
+.phrase span {
     word-break: break-word;
 }
 
@@ -104,7 +104,7 @@ header {
     top: 15px;
 }
 
-.top {
+.login-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -122,7 +122,7 @@ header {
     flex-basis: content;
 }
 
-.field {
+.input-field {
     max-height: 59px;
     flex-basis: initial;
     background-color: rgba(233, 240, 241, 0.6);
@@ -136,11 +136,11 @@ header {
 
 }
 
-.field span {
+.input-field span {
     padding: 5px 8px 8px;
 }
 
-.field input {
+.input-field input {
     font-size: 1.27rem;
     padding: 0 8px;
     margin: 4px 0 4px 0;
@@ -148,7 +148,7 @@ header {
     background-color: transparent;
 }
 
-.field input:focus {
+.input-field input:focus {
     outline: none;
 }
 
@@ -180,7 +180,7 @@ main {
     align-self: center;
 }
 
-.main-content {
+.central-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -189,21 +189,21 @@ main {
     max-width: 360px;
 }
 
-.main-content img {
+.central-content img {
     width: 35px;
     height: 32px;
 }
 
-.main-content h1 {
+.central-content h1 {
     font-size: 2.2rem;
 }
 
-.main-content span {
+.central-content span {
     font-weight: bold;
     margin: 50px 0 20px 0;
 }
 
-.main-content button {
+.central-content button {
     width: 100%;
     margin-bottom: 10px;
 }

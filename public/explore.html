@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="explore.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top">
-            <div class="left">
+            <div class="header-center">
                 <img src="./resources/Twitter_bird_logo_2012.svg.png" />
                 <div class="search-bar">
                     <div class="loupe">
@@ -23,9 +23,9 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <button class="navs lb">Log in</button>
-                <button class="navs rb">Sign up</button>
+            <div class="header-side">
+                <button class="sign-button log-in-but">Log in</button>
+                <button class="sign-button sign-up-but">Sign up</button>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="20" height="50"
                     viewBox="0 0 226 226"
@@ -37,7 +37,7 @@
     <main>
         <div class="content">
             <section class="explore">
-                <div class="heading">
+                <div class="explore-head">
                     <h2>Explore</h2>
                     <div class="settings"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                         width="23" height="50"
@@ -46,15 +46,15 @@
                     </div>
                 </div>
                 <div class="main-news">
-                    <div class="caption">
+                    <div class="news-caption">
                         <h4>COVID-19 · LIVE</h4>
                         <h1>COVID-19: Updates for the US</h1>
                     </div>
                 </div>
             </section>
             <section class="trends">
-                <h2 class="flex-container head">Trends for you</h2>
-                <div class="item">
+                <h2 class="flex-container section-head">Trends for you</h2>
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Trending in Russia</h4>
                         <p>ЛГБТ</p>
@@ -62,7 +62,7 @@
                     </div>
                     <svg viewBox="0 0 24 24" class="r-4qtqp9 r-yyyyoo r-ip8ujx r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-27tl0q"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Trending in Russia</h4>
                         <p>#девочки_в_жожофд</p>
@@ -70,7 +70,7 @@
                     </div>
                     <svg viewBox="0 0 24 24" class="r-4qtqp9 r-yyyyoo r-ip8ujx r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-27tl0q"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Trending in Russia</h4>
                         <p>Лапенко</p>
@@ -78,7 +78,7 @@
                     </div>
                     <svg viewBox="0 0 24 24" class="r-4qtqp9 r-yyyyoo r-ip8ujx r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-27tl0q"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Trending in Russia</h4>
                         <p>Караулова</p>
@@ -86,7 +86,7 @@
                     </div>
                     <svg viewBox="0 0 24 24" class="r-4qtqp9 r-yyyyoo r-ip8ujx r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-27tl0q"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Trending in Russia</h4>
                         <p>#клубромантики</p>
@@ -99,43 +99,43 @@
                 </div>
             </section>
             <section class="news">
-                <h2 class="head">What's happening</h2>
-                <div class="item">
+                <h2 class="section-head">What's happening</h2>
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>News · July 31, 2020</h4>
                         <p>President Trump says he plans to ban TikTok from the US</p>
                     </div>
                     <div class="image"></div>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Wrestling · Last night</h4>
                         <p>The Bella Twins both welcomed their babies one day apart</p>
                     </div>
                     <div class="image"></div>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Television · 1 hour ago</h4>
                         <p>Watch What Happens: Live airing on Bravo</p>
                     </div>
                     <div class="image"></div>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Televsion · 5 hours ago</h4>
                         <p>Desus & Mero airing on Showtime</p>
                     </div>
                     <div class="image"></div>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>Television · This morning</h4>
                         <p>NOS4A2 airing on AMC</p>
                     </div>
                     <div class="image"></div>
                 </div>
-                <div class="item">
+                <div class="tweet-link">
                     <div class="topics">
                         <h4>COVID-19 · LIVE</h4>
                         <p>COVID-19: How to protect yourself</p>
