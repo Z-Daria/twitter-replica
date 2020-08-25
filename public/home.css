@@ -35,6 +35,18 @@ body {
     letter-spacing: 0.07rem;
 }
 
+.heading-icon-hover {
+    background-color: rgb(209, 224, 238);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.side-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
 .basic-font {
     font-size: 1rem;
     font-weight: bold;
@@ -86,8 +98,16 @@ nav div {
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
-    padding: 10px 5px;
+    padding: 10px 15px;
 }
+
+.nav-item-hover {
+    background-color: rgb(245, 248, 250);
+    border-radius: 25px;
+    cursor: pointer;
+    color: rgb(29, 161, 242);
+}
+
 
 nav div span {
     margin-left: 15px;
@@ -104,6 +124,7 @@ nav button {
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
+    border-radius: 30px;
     margin: 15px;
     padding: 10px;
 }
@@ -150,8 +171,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
     border-bottom: 1px solid rgb(231, 231, 240);
+}
+
+.header-center span {
+    padding: 15px;
 }
 
 .header-center, .main-info {
@@ -180,9 +205,12 @@ header {
     /* background-color: lightgoldenrodyellow; */
 }
 
-.options svg {
-    /* background-color: lightgrey; */
+.attach-icon {
     margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .make-tweet {
@@ -249,6 +277,8 @@ textarea:focus {
     border-radius: 25px;
     width: 100%;
     background-color: rgb(230, 236, 240);
+    /* background-color: rgb(213, 217, 219); */
+    border: 1px solid rgb(230, 236, 240);
 }
 
 .search-bar input {
@@ -311,7 +341,7 @@ textarea:focus {
     margin-bottom: 15px;
 }
 
-.topics-title, .tweet-link, .user-rec {
+.topics-title, .tweet-link, .user-rec, .title {
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -319,16 +349,28 @@ textarea:focus {
 }
 
 .topics-title {
+    padding: 5px;
+}
+
+.topics-title {
     align-items: center;
     justify-content: space-between;
+}
+
+.topics-title span {
+    padding: 15px;
 }
 
 .tweet-link {
     justify-content: space-between;
 }
 
-.tweet-link svg {
+.arrow-icon {
     align-self: flex-start;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .captions {
@@ -375,4 +417,23 @@ footer div {
 
 footer a, footer span, footer div {
     margin: 3px 3px 3px 0;
+}
+
+
+.more-info {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    background-color: white;
+    bottom: 90px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid rgb(230, 236, 240);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.more-info span {
+    padding: 10px;
 }
