@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sign-up.css" type="text/css"/>
 </head>
 <body>
     <div class="container">
@@ -32,23 +33,22 @@
                 </div>
             </div>
         </section>
-
     <!-- right section  -->
         <section class="right flex-column">
-
+        <div class="placeholder"></div>
         <!-- header -->
             <header>
-                <form action="#" method="post">
+                <form action="/login" method="post">
                     <div class="login-form flex-row">
                         <div class="credentials">
                             <div class="input-field">
                                 <span>Phone, email or username</span>
-                                <input type="text">
+                                <input type="text" name="username">
                             </div>
                             <div class="r">
                                 <div class="input-field">
                                     <span>Password</span>
-                                    <input type="text">
+                                    <input type="password" name="password">
                                 </div>
                                 <span class="password-reset">Forgot password?</span>
                             </div>
@@ -57,14 +57,14 @@
                     </div>
                 </form>
             </header>
-
+            <div id="signup-form"></div>
         <!-- main info  -->
             <main>
                 <div class="central-content bold">
                     <img src="./resources/Twitter_bird_logo_2012.svg.png" />
                     <h1>See what's happening in the world right now</h1>
                     <span>Join Twitter today.</span>
-                    <button class="blue-button button bold">Sign in</button>
+                    <button id="sign-up" class="blue-button button bold">Sign up</button>
                     <button class="white-button button bold">Log in</button>
                 </div>
             </main>
@@ -97,6 +97,6 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-    <script src="./main.js" type="text/javascript"></script>
+    <script src="/main.js" type="module"></script>
 </body>
 </html>

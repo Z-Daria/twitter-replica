@@ -2,10 +2,12 @@ const $loginButton =  $('.white-button');
 const $signinButton = $('.blue-button');
 const $footerItems = $('nav').children();
 const $inputField = $('.input-field');
+import { signupForm } from './sign-up.js';
 
 
 
 $(document).ready(() => {
+    console.log(signupForm);
     $loginButton.on('mouseenter', event => {
         $(event.currentTarget).css({
             backgroundColor: 'rgba(233, 240, 241, 0.6)',
@@ -52,6 +54,10 @@ $(document).ready(() => {
             color: 'rgb(101, 119, 134)',
             borderBottom: '2px solid rgb(118, 118, 118)'
         })
-    })
+    });
+
+    $('#sign-up').on('click', () => {
+        $('.container').append(signupForm);
+    });
     
 });
